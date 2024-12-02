@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Password Generator",
+    "description": "Generate passwords of varying lengths(Ctrl+Shift+L)",
+    "version": "1.0",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "images/icon.png"
+    },
+    "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "permissions": ["activeTab","scripting"],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L",
+        "mac": "Command+Shift+L"
+      }
+    }
+  }
+  }
